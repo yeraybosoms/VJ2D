@@ -1,0 +1,13 @@
+﻿  Board.cpp
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(58): warning C4018: '<': no coinciden signed/unsigned
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(59): warning C4018: '<': no coinciden signed/unsigned
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(66): warning C4018: '<': no coinciden signed/unsigned
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(78): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(79): warning C4018: '<': no coinciden signed/unsigned
+c:\users\cartman\documents\projects\vj2d\2dgame\board.cpp(80): warning C4018: '<': no coinciden signed/unsigned
+SOIL.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'vc100.pdb' con 'SOIL.lib(image_DXT.obj)' o en 'C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\vc100.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+SOIL.lib(image_helper.obj) : warning LNK4099: no se encontró PDB 'vc100.pdb' con 'SOIL.lib(image_helper.obj)' o en 'C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\vc100.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+SOIL.lib(SOIL.obj) : warning LNK4099: no se encontró PDB 'vc100.pdb' con 'SOIL.lib(SOIL.obj)' o en 'C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\vc100.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: no se encontró PDB 'vc100.pdb' con 'SOIL.lib(stb_image_aug.obj)' o en 'C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\vc100.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  02-Bubble.vcxproj -> C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\02-Bubble.exe
+  02-Bubble.vcxproj -> C:\Users\Cartman\Documents\projects\VJ2D\2Dgame\Debug\02-Bubble.pdb (Partial PDB)

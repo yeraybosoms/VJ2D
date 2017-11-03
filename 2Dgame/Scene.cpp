@@ -39,6 +39,8 @@ void Scene::init()
 	player->setTileMap(map);
 	*/
 
+	initBackground();
+
 	board = new Board();
 	board->init(8, 7, texProgram);
 	board->load(1);
@@ -67,6 +69,7 @@ void Scene::render()
 	texProgram.setUniform2f("texCoordDispl", 0.f, 0.f);
 	//map->render();
 	//player->render();
+	backgroundSprite->render();
 	board->render();
 }
 
@@ -99,6 +102,17 @@ void Scene::initShaders()
 	vShader.free();
 	fShader.free();
 }
+
+void Scene::initBackground() {
+	backgroundTextue.loadFromFile("images/background.png", TEXTURE_PIXEL_FORMAT_RGBA);
+
+	backgroundSprite = Sprite::createSprite(
+		glm::ivec2(700, 600),
+		glm::vec2(1, 1),
+		&backgroundTextue,
+		&texProgram);
+}
+
 
 
 

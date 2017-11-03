@@ -1,9 +1,9 @@
 #include "Board.h"
 
-#define BUBBLE_SIZE 32.0f
+#define BUBBLE_SIZE 34.0f
 
 #define BUBBLE_TYPES 10
-#define START_BUBLES_X 240.0f
+#define START_BUBLES_X 212.0f
 
 
 
@@ -25,7 +25,11 @@ void Board::init(int width, int height,  ShaderProgram &program) {
 	bubTexture.loadFromFile("images/bubbles.png", TEXTURE_PIXEL_FORMAT_RGBA);
 
 
-	bubSprite = Sprite::createSprite(glm::ivec2(BUBBLE_SIZE, BUBBLE_SIZE), glm::vec2(1.0f/3.0f, 1.0f/3.0f), &bubTexture, &program);
+	bubSprite = Sprite::createSprite(
+		glm::ivec2(BUBBLE_SIZE, BUBBLE_SIZE),
+		glm::vec2(1.0f/3.0f, 1.0f/3.0f),
+		&bubTexture,
+		&program);
 	
 
 
