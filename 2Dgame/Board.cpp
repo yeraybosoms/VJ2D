@@ -1,5 +1,9 @@
 #include "Board.h"
 
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
 #define BUBBLE_SIZE 34.0f
 
 #define BUBBLE_TYPES 10
@@ -20,7 +24,7 @@ void Board::init(int width, int height,  ShaderProgram &program) {
 	boardWidth = width;
 	boardHeight = height;
 
-	matrixBubbles = boardMatrix(boardHeight, boardRow(width, 1));
+	matrixBubbles = boardMatrix(boardHeight, boardRow(width, 0));
 
 	bubTexture.loadFromFile("images/bubbles.png", TEXTURE_PIXEL_FORMAT_RGBA);
 
@@ -74,12 +78,19 @@ void Board::render() {
 }
 
 void Board::load(int level) {
-	//For now it's random
-	srand(time(NULL));
-	for (int i = 0; i < boardHeight; ++i) {
-		for (int j = 0; j < boardWidth; ++j) {
-			matrixBubbles[i][j] = (rand() % (BUBBLE_TYPES));
+
+	ifstream fin;
+	string line;
+	char tile;
+
+	fin.open("levels/level0" + std::to_string(level) + ".txt");
+	int y = 0;
+	while (getline(fin, line)) {
+		for (int x = 0; x < 8; ++x) {
+			char tmp = line[x * 2];
+			matrixBubbles[y][x] = line[x*2] - '0';
 		}
+		y++;
 	}
 }
 

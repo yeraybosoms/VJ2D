@@ -26,6 +26,7 @@ public:
 
 private:
 	void initShaders();
+	void initBackground();
 
 private:
 	TileMap *map;
@@ -33,6 +34,10 @@ private:
 	ShaderProgram texProgram;
 	float currentTime;
 	glm::mat4 projection;
+
+	//Background
+	Texture backgroundTextue;
+	Sprite* backgroundSprite;
 	
 	Board *board;
 

@@ -107,7 +107,7 @@ void Scene::initBackground() {
 	backgroundTextue.loadFromFile("images/background.png", TEXTURE_PIXEL_FORMAT_RGBA);
 
 	backgroundSprite = Sprite::createSprite(
-		glm::ivec2(700, 600),
+		glm::ivec2(700, 450),
 		glm::vec2(1, 1),
 		&backgroundTextue,
 		&texProgram);
